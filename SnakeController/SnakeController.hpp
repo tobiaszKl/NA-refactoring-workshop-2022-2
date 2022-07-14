@@ -66,6 +66,13 @@ private:
 
     Direction m_currentDirection;
     std::list<Segment> m_segments;
+
+    enum EventId {
+        timeoutId = 0x20,
+        directionId = 0x10,
+        foodIndId = 0x40,
+        foodRespId = 0x42
+    };
 };
 
 } // namespace Snake
